@@ -48,15 +48,14 @@ export default function ContactPage() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true)
-    
+    setIsSubmitting(true);
     // Simulate form submission
     setTimeout(() => {
-      console.log(values)
-      toast.success("Mesajınız başarıyla gönderildi! En kısa sürede size geri döneceğim.")
-      form.reset()
-      setIsSubmitting(false)
-    }, 1500)
+      console.log(values);
+      toast.success("Mesajınız başarıyla gönderildi! En kısa sürede size geri döneceğim.");
+      form.reset();
+      setIsSubmitting(false);
+    }, 1500);
   }
 
   return (

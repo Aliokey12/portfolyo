@@ -51,15 +51,18 @@ export default function SkillsPage() {
               <CardTitle>Teknik Beceriler</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
-              {technicalSkills.map((skill) => (
-                <div key={skill.name} className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="font-medium">{skill.name}</span>
-                    <span className="text-sm text-muted-foreground">{skill.level}%</span>
+              {technicalSkills.map((skill) => {
+                const { name, level } = skill;
+                return (
+                  <div key={name} className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="font-medium">{name}</span>
+                      <span className="text-sm text-muted-foreground">{level}%</span>
+                    </div>
+                    <Progress value={level >= 0 && level <= 100 ? level : 0} className="h-2" />
                   </div>
-                  <Progress value={skill.level} className="h-2" />
-                </div>
-              ))}
+                );
+              })}
             </CardContent>
           </Card>
 
