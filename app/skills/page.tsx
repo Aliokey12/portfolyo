@@ -59,7 +59,7 @@ export default function SkillsPage() {
                       <span className="font-medium">{name}</span>
                       <span className="text-sm text-muted-foreground">{level}%</span>
                     </div>
-                    <Progress value={Math.max(0, Math.min(level, 100))} className="h-2" />
+                    <Progress value={Math.max(0, Math.min(level, 100))} max={100} className="h-2" />
                   </div>
                 );
               })}
