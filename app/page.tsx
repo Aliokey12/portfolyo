@@ -75,13 +75,13 @@ export default function Home() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="font-semibold">Project {i}</h3>
+                  <h3 className="font-semibold">Proje 1</h3>
                   <p className="text-sm text-muted-foreground">
-                    Form Oluşturma Uygulaması
+                    Bu projenin kısa bir açıklaması ve kullanılan teknolojiler.
                   </p>
                   <Button variant="link" className="p-0" asChild>
-                    <Link target="_blank" href={`https://form-builder-nine-lyart.vercel.app/builder`}>
-                      Projeye Git <ArrowRight className="ml-1 h-4 w-4" />
+                    <Link target="_blank" href={`https://form-builder-nine-lyart.vercel.app/builder`}>  
+                      Projeyi Görüntüle <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
                 </CardContent>
