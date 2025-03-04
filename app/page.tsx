@@ -77,11 +77,11 @@ export default function Home() {
                 <CardContent className="p-4">
                   <h3 className="font-semibold">Project {i}</h3>
                   <p className="text-sm text-muted-foreground">
-                    A brief description of this project and the technologies used.
+                    Form Oluşturma Uygulaması
                   </p>
                   <Button variant="link" className="p-0" asChild>
                     <Link target="_blank" href={`https://form-builder-nine-lyart.vercel.app/builder`}>
-                      View Project <ArrowRight className="ml-1 h-4 w-4" />
+                      Projeye Git <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
                 </CardContent>
