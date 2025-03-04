@@ -68,7 +68,7 @@ export default function Home() {
               <Card key={i} className="overflow-hidden">
                 <div className="relative aspect-video">
                   <Image
-                    src={`/form.png`}
+                    src={`/image.png`}
                     alt={`Project ${i}`}
                     fill
                     className="object-cover"
