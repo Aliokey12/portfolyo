@@ -75,9 +75,9 @@ export default function Home() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="font-semibold">Proje 1</h3>
+                  <h3 className="font-semibold">Form Builder</h3>
                   <p className="text-sm text-muted-foreground">
-                    Bu projenin kısa bir açıklaması ve kullanılan teknolojiler.
+                    Kendi Formunuzu Oluşturmanıza Yardımcı Olan Bir Uygulama.
                   </p>
                   <Button variant="link" className="p-0" asChild>
                     <Link target="_blank" href={`https://form-builder-nine-lyart.vercel.app/builder`}>  
@@ -85,6 +85,31 @@ export default function Home() {
                     </Link>
                   </Button>
                 </CardContent>
+                
+              </Card>
+            ))}
+              {[1].map((i) => (
+              <Card key={i} className="overflow-hidden">
+                <div className="relative aspect-video">
+                  <Image
+                    src={`/social_media.png`}
+                    alt={`Project ${i}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold">Snap Flow</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Bir Sosyal Medya Platformu İçerde Post Atabilir Takipleşebilir Mesajlaşıp Birbinizin Fotoğraflarını Beğenebilirsiniz. Klasik Bir SosyaL Medya platformu
+                  </p>
+                  <Button variant="link" className="p-0" asChild>
+                    <Link target="_blank" href={`https://social-media-lemon-psi.vercel.app`}>  
+                      Projeyi Görüntüle <ArrowRight className="ml-1 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+                
               </Card>
             ))}
           </div>
